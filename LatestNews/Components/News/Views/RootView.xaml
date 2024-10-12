@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<views:BaseView 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:LatestNews.Components.UiFunctionality.Navigation.Views;assembly=LatestNews"
+    x:Class="LatestNews.Components.News.Views.RootView"
+    BackgroundColor="White">    
+    <Grid>
+        <Grid.RowDefinitions>
+            <!-- Placeholder for serch and others -->
+            <RowDefinition Height="Auto"></RowDefinition>
+            <!-- Divider -->
+            <RowDefinition Height="Auto"></RowDefinition>
+            <!-- Carouseview  -->
+            <RowDefinition Height="*"></RowDefinition>
+            <!-- Botton main button -->
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Label
+            Grid.Row="2"
+            Text="ROOT View"
+            TextColor="Black"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            />
+    </Grid>
+</views:BaseView>
+
+
+           
