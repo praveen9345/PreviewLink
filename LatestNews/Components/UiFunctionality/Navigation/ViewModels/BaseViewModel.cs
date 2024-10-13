@@ -2,6 +2,7 @@ namespace LatestNews.Components.UiFunctionality.Navigation.ViewModels
 {
     using CommunityToolkit.Mvvm.ComponentModel;
     using CommunityToolkit.Mvvm.Input;
+    using LatestNews.Components.PlatformUtils;
     using Localization;
     using System.Threading.Tasks;
    
@@ -20,10 +21,9 @@ namespace LatestNews.Components.UiFunctionality.Navigation.ViewModels
         /// <summary>
         ///     Initializes an instance of the <see cref="BaseViewModel"/> class.
         /// </summary>
-        /// <param name="serviceProvider">The service provider to retrieve registered services.</param>
-        protected BaseViewModel(IServiceProvider serviceProvider)
+        protected BaseViewModel()
         {
-            NavigationService = serviceProvider.GetService<INavigationService>();
+            NavigationService = ServiceHelper.GetService<INavigationService>();
             BackNavigationCommand = new AsyncRelayCommand(OnBackButtonPressed, () => _isBackNavigationEnabled);
         }
 

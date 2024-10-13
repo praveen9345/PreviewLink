@@ -17,7 +17,7 @@ namespace LatestNews.Test.Components.UiFunctionality.Navigation.ViewModels
         /// </summary>
         private class TestViewModel : BaseViewModel
         {
-            public TestViewModel(IServiceProvider serviceProvider) : base(serviceProvider)
+            public TestViewModel()
             {
             }
         }
@@ -32,7 +32,7 @@ namespace LatestNews.Test.Components.UiFunctionality.Navigation.ViewModels
         {
             base.Initialize();
 
-            _viewModel = new TestViewModel(ServiceProviderMock);
+            _viewModel = new TestViewModel();
         }
 
         /// <summary>

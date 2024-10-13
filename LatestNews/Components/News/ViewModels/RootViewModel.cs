@@ -10,8 +10,7 @@
         /// <summary>
         ///     Initializes a new instance of the <see cref="RootViewModel" />.
         /// </summary>
-        /// <param name="serviceProvider">The service provider to retrieve registered services.</param>
-        public RootViewModel(IServiceProvider serviceProvider) : base(serviceProvider)
+        public RootViewModel()
         {
             IsBackNavigationEnabled = true;
         }

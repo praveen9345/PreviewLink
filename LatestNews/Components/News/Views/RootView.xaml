@@ -22,8 +22,7 @@
             Text="ROOT View"
             TextColor="Black"
             HorizontalOptions="Center"
-            VerticalOptions="Center"
-            />
+            VerticalOptions="Center"/>
     </Grid>
 </views:BaseView>
 
