@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LatestNews", "LatestNews\LatestNews.csproj", "{643462D7-AF5F-4387-81E9-AA54BCB91C2D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LatestNews.Test", "LatestNews.Test\LatestNews.Test.csproj", "{08EDE2C9-EE74-459F-A0B2-80A759D030FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
