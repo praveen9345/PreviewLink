@@ -7,10 +7,11 @@
     using LatestNews.Components.UiFunctionality.Navigation;
     using LatestNews.Components.PlatformUtils;
 
-
+    
     /// <summary>
     ///     The base test class which resolves the needed singletons for the other test classes.
     /// </summary>
+    /// Note: RUN the test in terminal dotnet test -l "console;verbosity=normal"
     public class BaseTestClass
     {
         /// <summary>
@@ -18,7 +19,6 @@
         /// </summary>
         protected Mock<INavigationService> NavigationServiceMock { get; private set; }
 
-    
         /// <summary>
         ///     The service provider.
         /// </summary>

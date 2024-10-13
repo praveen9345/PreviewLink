@@ -8,7 +8,6 @@
 		<Configurations>Debug;Release;DebugEmulator;DebugDevice</Configurations>
 		<UseMaui>true</UseMaui>
 		<MauiVersion>8.0.40</MauiVersion>
-		<OutputType Condition="'$(TargetFramework)' == 'net8.0-ios'">Exe</OutputType>
 		<OutputType Condition="'$(TargetFramework)' == 'net8.0-android'">Exe</OutputType>
 		<OutputType Condition="'$(TargetFramework)' == 'net8.0'">Library</OutputType>
 		<SingleProject>true</SingleProject>
@@ -40,26 +39,6 @@
     <PropertyGroup Condition="'$(Configuration)' == 'DebugDevice'">
         <AndroidSupportedOSVersion>21.0</AndroidSupportedOSVersion>
     </PropertyGroup>
-
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Staging|net8.0-android|AnyCPU'">
-		<EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
-		<AndroidManagedSymbols>true</AndroidManagedSymbols>
-		<UseInterpreter>false</UseInterpreter>
-		<PublishTrimmed>true</PublishTrimmed>
-		<RunAOTCompilation>true</RunAOTCompilation>
-		<AndroidEnableProfiledAot>true</AndroidEnableProfiledAot>
-		<Optimize>true</Optimize>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net8.0-android|AnyCPU'">
-		<EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
-		<AndroidManagedSymbols>true</AndroidManagedSymbols>
-		<AndroidPackageFormats>aab;apk</AndroidPackageFormats>
-		<UseInterpreter>false</UseInterpreter>
-		<PublishTrimmed>true</PublishTrimmed>
-		<RunAOTCompilation>true</RunAOTCompilation>
-		<AndroidEnableProfiledAot>true</AndroidEnableProfiledAot>
-		<Optimize>true</Optimize>
-	</PropertyGroup>
 
 	<ItemGroup>
 		<!-- App Icon -->
