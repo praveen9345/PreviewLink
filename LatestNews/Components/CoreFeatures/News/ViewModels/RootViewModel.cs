@@ -1,4 +1,4 @@
-﻿namespace LatestNews.Components.News.ViewModels
+﻿namespace LatestNews.Components.CoreFeatures.News.ViewModels
 {
     using LatestNews.Components.UiFunctionality.Navigation.ViewModels;
     

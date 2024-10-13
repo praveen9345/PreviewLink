@@ -68,11 +68,6 @@ namespace LatestNews.Components.UiFunctionality.Navigation
             var name = typeof(T).Name;
             var location = _shellWrapper.GetCurrentState().Location.ToString();
 
-           /*  if (location.Contains(name))
-            {
-                return location.Substring(0, location.IndexOf(name) + name.Length);
-              
-            } */
             return name;
         }
 

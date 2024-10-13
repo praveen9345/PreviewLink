@@ -1,6 +1,6 @@
-﻿namespace LatestNews.Components.News.Views
+﻿namespace LatestNews.Components.CoreFeatures.News.Views
 {
-    using LatestNews.Components.News.ViewModels;
+    using LatestNews.Components.CoreFeatures.News.ViewModels;
     using LatestNews.Components.UiFunctionality.Navigation.Views;
     
     /// <summary>

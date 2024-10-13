@@ -54,8 +54,7 @@
             {
                 foreach (var service in exportedTypes)
                 {
-                    if (!service.IsInterface && service.Name.EndsWith(singletonType)
-                                             && !service.Name.EndsWith("HttpClientWrapper") && !service.IsAbstract)
+                    if (!service.IsInterface && service.Name.EndsWith(singletonType) && !service.IsAbstract)
                     {
                         var interfaceType = service.GetInterfaces().FirstOrDefault(type =>
                             type.Name.EndsWith(service.Name));
@@ -67,6 +66,7 @@
                     }
                 }
             }
+
             return builder;
         }
 

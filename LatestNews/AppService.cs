@@ -1,6 +1,6 @@
 namespace LatestNews
 {
-    using LatestNews.Components.News.Views;
+    using LatestNews.Components.CoreFeatures.News.Views;
     using LatestNews.Components.PlatformUtils;
     using LatestNews.Components.UiFunctionality.Navigation;
    
