@@ -34,8 +34,7 @@
             {
                 _errorLogger.LogError("HttpClientWrapper.cs:SendRequestAsync:", $"Making call to base address {Client.BaseAddress}");
                 string apiUrl = Client.BaseAddress + "?q=" + previewLink;
-                Client.DefaultRequestHeaders.Add("X-Linkpreview-Api-Key", Configuration.Models.Constants.API_KEY);
-                
+
                 var response =  await Client.GetAsync(apiUrl);
                 if (response == null)
                 {
@@ -68,6 +67,7 @@
             if (Client.BaseAddress == null)
             {
                 Client.BaseAddress = new Uri(address);
+                Client.DefaultRequestHeaders.Add("X-Linkpreview-Api-Key", Configuration.Models.Constants.API_KEY);
             }
         }
 

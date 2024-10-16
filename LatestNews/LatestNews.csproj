@@ -15,7 +15,7 @@
 		<UsingMauiEssentials>true</UsingMauiEssentials>
 
 		<!-- Display name -->
-		<ApplicationTitle>LatestNews</ApplicationTitle>
+		<ApplicationTitle>PreviewLink</ApplicationTitle>
 
 		<!-- App Identifier -->
 		<ApplicationId>com.companyname.latestnews</ApplicationId>
@@ -72,7 +72,6 @@
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="CommunityToolkit.Maui" Version="9.0.2" />
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
-		<PackageReference Include="JWT" Version="10.1.1" />
 		<PackageReference Include="modernhttpclient-updated" Version="3.4.3" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3"/>
 	</ItemGroup>

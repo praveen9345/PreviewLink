@@ -60,20 +60,65 @@ namespace LatestNews.Components.UiFunctionality.Localization
         }
 
         /// <summary>
-        ///   Looks up a localized string similar to RootViewModel MenuText!!.
+        ///   Looks up a localized string similar to title for no internet connection text!!.
         /// </summary>
-        public static string RootViewModel_MenuText {
+        public static string Dialog_InternetConnection_Title {
             get {
-                return ResourceManager.GetString("RootViewModel_MenuText", resourceCulture);
+                return ResourceManager.GetString("Dialog_InternetConnection_Title", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to message for no internet connection text!!.
+        /// </summary>
+        public static string Dialog_InternetConnection_Message {
+            get {
+                return ResourceManager.GetString("Dialog_InternetConnection_Message", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to ok text!!.
+        /// </summary>
+        public static string Dialog_OK_Text {
+            get {
+                return ResourceManager.GetString("Dialog_OK_Text", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to mpty or have to be valid url Text!!.
+        /// </summary>
+        public static string RootViewModel_UrlNotValidText {
+            get {
+                return ResourceManager.GetString("RootViewModel_UrlNotValidText", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RootViewModel HistoryText!!.
+        ///   Looks up a localized string similar to RootViewModel Please provide the url Text!!.
         /// </summary>
-        public static string RootViewModel_HistoryText {
+        public static string RootViewModel_EmptyEntryText {
             get {
-                return ResourceManager.GetString("RootViewModel_HistoryText", resourceCulture);
+                return ResourceManager.GetString("RootViewModel_EmptyEntryText", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to RootViewModel Enter the preview link Text!!.
+        /// </summary>
+        public static string RootViewModel_EnterPreviewLinkText {
+            get {
+                return ResourceManager.GetString("RootViewModel_EnterPreviewLinkText", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to RootViewModel Submit Text!!.
+        /// </summary>
+        public static string RootViewModel_SubmitButtonText {
+            get {
+                return ResourceManager.GetString("RootViewModel_SubmitButtonText", resourceCulture);
             }
         }
 

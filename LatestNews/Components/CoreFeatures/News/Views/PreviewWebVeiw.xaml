@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<views:BaseView 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:LatestNews.Components.UiFunctionality.Navigation.Views;assembly=LatestNews"
+    x:Class="LatestNews.Components.CoreFeatures.News.Views.PreviewWebView"
+    BackgroundColor="White">  
+    <ScrollView>  
+        <Grid>
+            <WebView
+               Source="{Binding WebUrl}"
+               VerticalOptions="Fill"
+               HorizontalOptions="Fill"/>    
+        </Grid>
+    </ScrollView>
+</views:BaseView>
+
+
+           

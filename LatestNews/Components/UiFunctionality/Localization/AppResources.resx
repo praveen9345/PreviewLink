@@ -121,18 +121,38 @@
   <!-- ###################################################################################################################### -->
 
   <!--Global Variable-->
-  
+  <data name="Dialog_InternetConnection_Title" xml:space="preserve">
+    <value>Connectivity!</value>
+    <comment></comment>
+  </data>
+
+  <data name="Dialog_InternetConnection_Message" xml:space="preserve">
+    <value>No Internet connection available.</value>
+    <comment></comment>
+  </data>
+
+  <data name="Dialog_OK_Text" xml:space="preserve">
+    <value>OK</value>
+    <comment></comment>
+  </data>
 
   <!--RootView ViewModel-->
-  <data name="RootViewModel_MenuText" xml:space="preserve">
-    <value>Menu</value>
+  <data name="RootViewModel_UrlNotValidText" xml:space="preserve">
+    <value>Field should not be empty or have to be valid url(https:// or www.).</value>
     <comment></comment>
   </data>
-  <data name="RootViewModel_HistoryText" xml:space="preserve">
-    <value>History</value>
+  <data name="RootViewModel_EmptyEntryText" xml:space="preserve">
+    <value>Please provide the url.</value>
     <comment></comment>
   </data>
-  
+  <data name="RootViewModel_EnterPreviewLinkText" xml:space="preserve">
+    <value>Enter the preview link</value>
+    <comment></comment>
+  </data>
+  <data name="RootViewModel_SubmitButtonText" xml:space="preserve">
+    <value>Submit</value>
+    <comment></comment>
+  </data>
 
  <!-- ###################################################################################################################### -->
 </root>
