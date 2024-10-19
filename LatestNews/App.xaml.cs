@@ -1,5 +1,7 @@
 ﻿namespace LatestNews
 {
+	using LatestNews.Components.CoreFeatures.AppStart;
+	
 	/// <summary>
 	///     Class representing the cross-platform application.
 	/// </summary>

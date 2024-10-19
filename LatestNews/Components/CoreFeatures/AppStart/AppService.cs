@@ -1,4 +1,4 @@
-namespace LatestNews
+namespace LatestNews.Components.CoreFeatures.AppStart
 {
     using LatestNews.Components.CoreFeatures.News.Views;
     using LatestNews.Components.PlatformUtils;
@@ -43,17 +43,4 @@ namespace LatestNews
         }
 
    }
-
-    /// <summary>
-    ///     Interface of the service with method for starting the service asynchronously.
-    /// </summary>
-    public interface IAppService
-    {
-        /// <summary>
-        ///     Performs necessary actions to start the application service asynchronously.
-        /// </summary>
-        /// <returns> An awaitable task. </returns>
-        Task OnStartAsync();
-
-    }
 }

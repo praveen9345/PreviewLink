@@ -52,7 +52,6 @@
         ///     Despite the naming <see cref="OnAppearing"/> is triggered before the view is loaded,
         ///     thus we use it for the initialization of the view model and trigger the appearing event
         ///     as soon as the view is actually loaded.
-        ///
         ///     Using <see cref="Microsoft.Maui.Controls.Page.NavigatedTo"/> would also be an option, but it was
         ///     called that early that in some cases it lead to having the previously view model still active.
         /// </summary>

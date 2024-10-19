@@ -1,7 +1,5 @@
 namespace LatestNews.Components.UiFunctionality.Navigation
 {
-    using System.ComponentModel;
-
     /// <summary>
     ///     Interface of the service providing navigation functionality.
     /// </summary>
