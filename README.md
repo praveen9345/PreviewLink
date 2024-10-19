@@ -14,12 +14,10 @@ This project demonstrates the development of a cross-platform .NET MAUI (Multi-p
 Launch the app, red rectangualr box indicate to perform click or press by user in the app: 
 <p float="left">
   <img src="./documents/app_1.png" alt="Screen 1" width="200" height="400"/>
-  <img src="./images/app_2.png" alt="Screen 2" width="200" height="400"/>
-  <img src="./images/app_3.png" alt="Screen 3" width="200" height="400"/>
-</p>
-<p float="left">
+  <img src="./documents/app_2.png" alt="Screen 2" width="200" height="400"/>
+  <img src="./documents/app_3.png" alt="Screen 3" width="200" height="400"/>
   <img src="./documents/app_4.png" alt="Screen 1" width="200" height="400"/>
-  <img src="./images/app_5.png" alt="Screen 2" width="200" height="400"/>
+  <img src="./documents/app_5.png" alt="Screen 2" width="200" height="400"/>
 </p>
 
 
