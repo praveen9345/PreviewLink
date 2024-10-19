@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<views:BaseView 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:LatestNews.Components.UiFunctionality.Navigation.Views;assembly=LatestNews"
+    x:Class="LatestNews.Components.CoreFeatures.News.Views.RootView"
+    BackgroundColor="White">  
+    <ScrollView>  
+        <Grid>
+            <Grid.RowDefinitions>
+                <!-- Placeholder for serch and others -->
+                <RowDefinition Height="Auto"></RowDefinition>
+                <!-- Divider -->
+                <RowDefinition Height="Auto"></RowDefinition>
+                <!-- priview link area -->
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Frame
+                Grid.Row="0"
+                Margin="10,30,10,30"
+                Padding="5"
+                HeightRequest="60"
+                HasShadow="True"
+                BorderColor="LightGray"
+                BackgroundColor="{StaticResource BackgroundFrame}"
+                CornerRadius="50">
+                    <StackLayout 
+                        Orientation="Horizontal"
+                        >
+                        <!-- Entry Field -->
+                        <Entry 
+                            Text="{Binding PreviewLink}"
+                            TextColor="Black"
+                            PlaceholderColor="Gray"
+                            HeightRequest="75"
+                            Placeholder="{Binding [EnterPreviewLinkText]}" 
+                            VerticalOptions="FillAndExpand"
+                            HorizontalOptions="FillAndExpand"
+                            />
+
+                        <!-- Submit Button -->
+                        <Button 
+                            Text="{Binding [SubmitButtonText]}"
+                            FontAttributes="Bold"
+                            WidthRequest="75" 
+                            CornerRadius="50"
+                            FontSize="12"
+                            BackgroundColor="{StaticResource SecondaryDarkText}"
+                            Command="{Binding SubmitCommand}"
+                        />
+                    </StackLayout>
+                </Frame>
+                <BoxView
+                    Grid.Row="1"
+                    HeightRequest="2"
+                    Color="Blue"
+                    HorizontalOptions="FillAndExpand"/>
+
+            <!-- Card View -->
+            <StackLayout 
+                Margin="0,25,0,0"
+                Grid.Row="2"
+                Padding="10">
+              
+                <Frame 
+                    CornerRadius="10" 
+                    HasShadow="True"
+                    BorderColor="LightGray" 
+                    Padding="0"
+                    BackgroundColor="{StaticResource BackgroundFrame}">
+                    <Frame.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Command="{Binding TapCommand}"
+                        NumberOfTapsRequired="1"/>
+                    </Frame.GestureRecognizers>
+
+                    <StackLayout>
+
+                        <!-- Image Section -->
+                        <Image 
+                            Source="{Binding ImageUrlLink}" 
+                            Aspect="AspectFill" 
+                            HeightRequest="200"
+                            WidthRequest="400" />
+
+                        <!-- Content Section -->
+                        <StackLayout Padding="10">
+                            
+                            <!-- Title -->
+                            <Label
+                                Text="{Binding TitleLink}"
+                                FontAttributes="Bold"
+                                FontSize="17"
+                                TextColor="Black"
+                                LineBreakMode="WordWrap" />
+
+                            <!-- Description -->
+                            <Label Text="{Binding DescriptionLink}"
+                                FontSize="14"
+                                TextColor="{StaticResource LabelColor}"
+                                LineBreakMode="WordWrap"
+                                Margin="0,5,0,0" />
+
+                            <!-- Source Section -->
+                            <StackLayout 
+                                Orientation="Horizontal" 
+                                HorizontalOptions="Start">
+                                <Border 
+                                    Margin="5,0,6,0"
+                                    HeightRequest="30"
+                                    WidthRequest="30"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    StrokeShape="RoundRectangle 100"
+                                    StrokeThickness="0">
+                                    <Grid>
+                                        <Image 
+                                            Source="{Binding ImageUrlLink}"
+                                            Aspect="Fill"/>
+                                    </Grid>
+                                </Border>
+
+                                <Label 
+                                    Text="{Binding UrlLink}"
+                                    FontAttributes="Italic"
+                                    TextColor="{StaticResource LabelColor}"
+                                    FontSize="13"
+                                    VerticalOptions="Center"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+</views:BaseView>
+
+
+           
