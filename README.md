@@ -11,7 +11,7 @@ This project demonstrates the development of a cross-platform .NET MAUI (Multi-p
 * Unit Testing: Includes a unit test project to ensure robust and reliable application functionality.
 
 ## How its works
-1.Launch the app:
+1.Launch the app: ![App Screenshot] (./documents/app_1.png)
 
 
 
